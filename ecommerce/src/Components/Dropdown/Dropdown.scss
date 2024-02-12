@@ -1,0 +1,41 @@
+// Dropdown.scss
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  width: 120px;
+  position: absolute;
+  top: 50px; // Adjust this value based on your layout
+  right: 0;
+  background-color: #ffffff; // Dropdown background color
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Box shadow for styling
+  border: 1px solid #ccc; // Border for styling
+  z-index: 1;
+  overflow: hidden; // Hide overflow to prevent box-shadow artifacts
+  border-radius: 4px; // Rounded corners for a more modern look
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      a {
+        font-size: 14px; // Adjust font size
+        text-decoration: none;
+        color: #333333; // Dropdown link color
+        display: block;
+        padding: 12px;
+        width: 100%;
+        transition: background-color 0.3s ease; // Smooth transition on hover
+
+        &:hover {
+          background-color: #0de5cc; // Hover background color
+          color: #ffffff; // Text color on hover
+        }
+      }
+    }
+  }
+}

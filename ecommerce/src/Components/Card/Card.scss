@@ -1,0 +1,44 @@
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    margin: 10px;
+    border-radius: 5px;
+    &:hover {
+      transform: scale(1.05);
+    }
+  
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .card-content {
+      padding: 16px;
+      text-align: center;
+  
+      h2 {
+        margin: 0;
+      }
+  
+      p {
+        margin: 8px 0;
+        color: #888;
+      }
+  
+      button {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 8px 16px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+    }
+  }
+  
